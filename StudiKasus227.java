@@ -22,6 +22,21 @@ public class StudiKasus227 {
             } else {
                 System.out.println("Pilihan tingkat tidak valid.");
             }
+        } else if (jenis.equalsIgnoreCase("PKM")) {
+            System.out.println("\nPilih Skema PKM:");
+            System.out.println("1. PKM-RE (Riset Eksakta)");
+            System.out.println("2. PKM-K (Kewirausahaan)");
+            System.out.println("3. PKM-PM (Pengabdian Masyarakat)");
+            System.out.print("Pilihan Anda (1-3): ");
+            int skema = sc.nextInt();
+
+            if (skema >= 1 && skema <= 3) {
+                System.out.println("Pendaftaran PKM Anda berhasil diproses.");
+            } else {
+                System.out.println("Skema PKM tidak valid.");
+            }
+        } else {
+            System.out.println("\nJenis perlombaan tidak terdaftar.");
         }
 
         sc.close();
